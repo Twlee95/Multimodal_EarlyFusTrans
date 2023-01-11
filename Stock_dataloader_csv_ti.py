@@ -16,9 +16,9 @@ class stock_csv_read:
 
         
     def data_loader(self):
-        stock_data = pd.read_csv("C:/Users/lab/Desktop/MM_Transformer_early_abla_m2/data/kdd17/price_long_50/"  + self.data ,header=0)
-        modality2_data = pd.read_csv(r"C:\Users\lab\Desktop\MM_Transformer_early_abla_m2\data\kdd17\modality2.csv",header=0)
-        modality3_data = pd.read_csv(r"C:\Users\lab\Desktop\MM_Transformer_early_abla_m2\data\kdd17\modality3.csv",header=0)
+        stock_data = pd.read_csv("C:/Users/lab/Desktop/MM_Transformer_early_abla_m3/data/kdd17/price_long_50/"  + self.data ,header=0)
+        modality2_data = pd.read_csv(r"C:\Users\lab\Desktop\MM_Transformer_early_abla_m3\data\kdd17\modality2.csv",header=0)
+        modality3_data = pd.read_csv(r"C:\Users\lab\Desktop\MM_Transformer_early_abla_m3\data\kdd17\modality3.csv",header=0)
 
         # modality3_data['Date'] = pd.to_datetime(modality3_data["Date"])
         # modality3_data['Date'] = modality3_data["Date"].dt.strftime('%m/%d/%Y')
@@ -201,7 +201,7 @@ class stock_csv_read:
         d_len = len(RSI)
 
         modality1  = pd.concat([open, high, low, close, volume, upndown, change, ten_day_ma, wma, momentum, stochastic_K, stochastic_D, RSI, MACD, LWR, A_D, CCI], axis=1,ignore_index=True)
-        df = pd.concat([modality1,modality3], axis=1,ignore_index=True)
+        df = pd.concat([modality1,modality2], axis=1,ignore_index=True)
 
         data = pd.concat([df,tgt], axis=1,ignore_index=True)
         data = data.iloc[:(d_len-24)][:(d_len-24)][::-1].copy()
@@ -213,10 +213,10 @@ class stock_csv_read:
         data_list = []
         for i in range(len(self.dd)-self.x_frames-self.y_frames+1):
             xy = []
-            X = self.dd.iloc[i : i +self.x_frames, 0:23].values
+            X = self.dd.iloc[i : i +self.x_frames, 0:34].values
             scaler  = preprocessing.MinMaxScaler().fit(X)
             X = scaler.transform(X)
-            y = self.dd.iloc[i +self.x_frames : i +self.x_frames +self.y_frames, 23:].values
+            y = self.dd.iloc[i +self.x_frames : i +self.x_frames +self.y_frames, 34:].values
             xy.append(X)
             xy.append(y)
             data_list.append(xy)
