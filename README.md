@@ -57,11 +57,11 @@ Encoder 구조만을 부분적으로 차용, Time series 데이터에 이용함.
 
 
 ## Experiment setting
-1. Data split
+1. Data split <br/>
 Blocked Time Series Cross Validation
 <img width="936" alt="image" src="https://github.com/Twlee95/Multimodal_EarlyFusTrans/assets/76574427/0cb8a74d-4292-47d9-8806-5c5cd418a862">
 
-2. Model Selection
+2. Model Selection <br/>
 Nasted Time series Cross validation
 
 ![nasted_cv](https://user-images.githubusercontent.com/76574427/139542833-d78683f0-293b-4549-8b3a-c67d19e77f3e.PNG)
