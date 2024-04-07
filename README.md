@@ -1,6 +1,9 @@
 # Multimodal Early fusion transformer for stock prediction
 ![주식_이미지](https://user-images.githubusercontent.com/76574427/139482743-d017ba50-dacd-4642-8560-29f2af7169b4.jpg)
 
+<img width="479" alt="EF_Trans" src="https://github.com/Twlee95/Multimodal_EarlyFusTrans/assets/76574427/2d117c13-4ca5-41e4-90d9-89b19b9e80c6">
+
+
 주가 예측은 어렵지만 금융산업에서 중요한 문제임.
 
 최근 딥러닝을 이용한 주가예측 알고리즘에 많은 시도가 있지만
