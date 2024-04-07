@@ -63,6 +63,7 @@ Blocked Time Series Cross Validation
 
 2. Model Selection
 Nasted Time series Cross validation
+
 ![nasted_cv](https://user-images.githubusercontent.com/76574427/139542833-d78683f0-293b-4549-8b3a-c67d19e77f3e.PNG)
 
 
