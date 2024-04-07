@@ -1,4 +1,4 @@
-f# Multimodal Early fusion transformer for stock prediction
+# Multimodal Early fusion transformer for stock prediction
 
 Effective Exploitation of Macroeconomic Indicators for Stock Direction Classification Using the Multimodal Fusion Transformer, Tae-Won Lee; Paweł Teisseyre; Jaesung Lee
 #### [Paper Link](https://ieeexplore.ieee.org/abstract/document/10029354/) 
